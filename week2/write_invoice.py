@@ -1,0 +1,19 @@
+# write_invoice.py
+
+invoice_text = """INVOICE #INV-2026-0001
+Date: 2026-07-13
+Customer: John Doe
+
+Item                  Amount
+-----------------------------
+Web Design            R 2500.00
+Hosting               R 1200.00
+-----------------------------
+Subtotal:             R 3700.00
+VAT (15%):            R  555.00
+Total:                R 4255.00
+"""
+with open("sample-invoice.txt", "w") as file:
+	file.write(invoice_text)
+
+print("Invoice saved to sample-invoice.txt")
